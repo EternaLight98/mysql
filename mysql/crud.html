@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Servicios web</title>
+</head>
+<body>
+	<form action="clientemysql.php" method="post" >
+		Nombre: <input type="text" name="nombre" /><br/>
+		Apellidos: <input type="text" name="apellido" /><br/>
+		Direccion: <input type="text" name="direccion" /><br/>
+		<input type="text" name="funcion" value="creaContacto" hidden />
+		<input type="submit" value="Crear nuevo usuario" />
+	</form>
+	<hr/>
+	<form action="clientemysql.php" method="post" >
+		Nombre<input type="text" name="nombre" />
+		<input type="text" name="funcion" value="buscarContacto" hidden />
+		<input type="submit" value="Buscar Contacto" />
+	</form>
+	<hr/>
+	<form action="clientemysql.php" method="post" >
+		<input type="text" name="funcion" value="mostrarTodosContactos" hidden />
+		<input type="submit" value="Mostrar todos los contactos" />
+	</form>
+	<hr/>
+	
+
+
+
+
+	
+</body>
+</html>
